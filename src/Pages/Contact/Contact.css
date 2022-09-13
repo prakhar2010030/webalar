@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+.contactHeading {
+  margin: 2rem 4rem;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 86px;
+  color: #364f6b;
+}
+
+.OuterContainer {
+    margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainContainer {
+  width: 90%;
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+  gap: 4rem;
+}
+.leftContainer {
+  padding: 1rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: #364f6b;
+  border-radius: 24px;
+}
+.headings h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+.headings p {
+  margin-top: 1rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  color: #d9d9d9;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.inputContainer h1 {
+  margin-bottom: 1rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: #ffffff;
+}
+.inputContainer input {
+  padding: 1rem;
+  color: white;
+  width: auto;
+  background: #394149;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  height: 50px;
+  font-size: large
+}
+.inputContainer textarea {
+  width: auto;
+  background: #394149;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  height: 100px;
+}
+.emailContainer {
+  gap: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.SubmitBtn {
+  width: 20%;
+  color: black !important;
+  background: #43dde6 !important;
+  border-radius: 100px !important;
+}
+.rightContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.AddressContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.AddressContainer h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+  /* identical to box height */
+
+  color: #333333;
+}
+.AddressContainer p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  color: #333333;
+}
+
+.AddressContainer div {
+  display: flex;
+  gap: 1rem;
+}
+.ContactIcon {
+  background-color: #43dde6;
+  font-size: 30px !important;
+  color: #000;
+  border-radius: 50%;
+}
+.width{
+  width: 400px;
+}
+@media (max-width: 975px) {
+ 
+  .emailContainer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 863px) {
+  .mainContainer {
+    padding: 2rem;
+    flex-direction: column;
+  }
+  .leftContainer,
+  .rightContainer {
+    width: 100%;
+    align-items: center;
+  }
+  .emailContainer{
+    width: 100%;
+  }
+}

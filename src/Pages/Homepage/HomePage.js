@@ -4,6 +4,14 @@ import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
 import "./Homepage.css";
 import CardProject from "../../components/Cards/Card";
+import ServiceCard from "../../components/Cards/ServiceCard";
+// eslint-disable-next-line
+import image1 from "../../../src/assets/Group\ 72.png"
+// eslint-disable-next-line
+import image2 from "../../../src/assets/Group\ 73.png"
+// eslint-disable-next-line
+import image3 from "../../../src/assets/Group\ 75.png"
+
 const HomePage = () => {
   return (
     <div className="Homepage">
@@ -24,12 +32,49 @@ const HomePage = () => {
         </div>
       </div>
 
+      <div className="middleSection">
+        <div className="upperSection">
+          <div className="headingSection">
+            <span></span>
+            <h1>Trusted Companies</h1>
+            <span></span>
+          </div>
+          <div className="carousel">
+
+          </div>
+        </div>
+        <span className="horizontal"></span>
+        <div className="LowerSection">
+          <div className="serviceSection">
+            <div className="leftSection">
+              <span>Our services</span>
+              <span>that we provide</span>
+            </div>
+            <div className="rightSection">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus pariatur molestias similique, veritatis quae modi
+                impedit. Tenetur dolorem sequi vitae, neque aut sit doloremque
+                recusandae iure? Hic deleniti dicta veniam?
+              </p>
+            </div>
+          </div>
+          <div className="services">
+            <ServiceCard Title="Design" image={image1}/>
+            <span className="row"></span>
+            <ServiceCard Title="Development" image={image2}/>
+            <span className="row" ></span>
+            <ServiceCard Title="Marketing" image={image3}/>
+          </div>
+        </div>
+      </div>
+
       <div className="workContainer">
         <h1>Our Works</h1>
         <div className="projectCard">
-          <CardProject title="Project 1"/>
-          <CardProject title="Project 2"/>
-          <CardProject title="Project 3"/>
+          <CardProject title="Project 1" />
+          <CardProject title="Project 2" />
+          <CardProject title="Project 3" />
         </div>
         <Button className="btn">View More</Button>
       </div>

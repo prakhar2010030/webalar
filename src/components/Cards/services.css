@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+
+.CardContainer {
+    padding: 0rem 1rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: transparent;
+  gap: 1rem;
+}
+
+.CardContainer img {
+  height: 10vh;
+  width: fit-content;
+}
+.CardContainer h1 {
+    margin-top: 2rem;
+    margin-bottom: -0.5rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 28px;
+  color: #FFFFFF;
+
+}
+.CardContainer p {
+    font-family: 'lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+@media ( max-width:617px){
+  .CardContainer{
+    align-items: center;
+  }
+  .CardContainer p,.CardContainer h1{
+    width: auto;
+  }
+}

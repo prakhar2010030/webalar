@@ -35,7 +35,8 @@
 
   color: #333333;
 }
-.textContainer .btn,.workContainer .btn {
+.textContainer .btn,
+.workContainer .btn {
   padding: 0.3rem 1rem;
   background: #43dde6;
   border-radius: 100px;
@@ -52,61 +53,192 @@
 
 .imageContainer {
   width: 50%;
-  height:60vh;
-  background-image: url(../../../public/assets/internship.png);
+  height: 60vh;
+  background-image: url(../../../src/assets/internship.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-.workContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.middleSection {
+  background: #364f6b;
+  margin: 2.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 32px;
+  flex-direction: column;
+}
+.headingSection {
+  display: flex;
+  align-items: center;
+  gap:1rem;
+}
+.headingSection h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 42px;
+/* width: fit-conten; */
+  color: #ffffff;
+}
+.headingSection span {
+  width: 100px;
+  height: 2px;
+  background: #d9d9d9;
+}
+.horizontal {
+  width: 90%;
+  background-color: white;
+  height: 1px;
 }
 
-.workContainer h1{
+.services {
+  width: 90%;
+  display: flex;
+  margin: 1rem;
+}
+.LowerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+.serviceSection {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin: 3rem 0;
+}
+.leftSection {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.leftSection span {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 72px;
+  /* line-height: 86px; */
 
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 72px;
-    line-height: 86px;
-    
-    color: #364F6B;
+  color: #ffffff;
+}
+.rightSection {
+  width: 40%;
+}
+.rightSection p {
+  margin: 1rem;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  color: #d9d9d9;
 }
 
-.projectCard{
+.row {
+  height: auto;
+  width: 5px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(54, 79, 107, 0.3),
+    rgba(222, 222, 222, 0.5),
+    rgba(54, 79, 107, 0.3)
+  );
+}
+
+.workContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.workContainer h1 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 86px;
+
+  color: #364f6b;
+}
+
+.projectCard {
   display: flex;
 }
 
-@media (max-width:837px)
-{
-    
-    .contentContainer{
-        flex-direction: column;
-    }
-    .textContainer{
-        gap:1rem;
-        align-items: center;
-    }
-    .imageContainer{
-        width: auto;
-    }
-   
+@media (max-width: 837px) {
+  .contentContainer {
+    flex-direction: column;
+  }
+  .textContainer {
+    gap: 1rem;
+    align-items: center;
+  }
+  .imageContainer {
+    width: auto;
+  }
 }
 
-@media (max-width:902px)
-{
-  .projectCard{
+@media (max-width: 902px) {
+  .projectCard {
     align-items: center;
     flex-wrap: wrap;
-     }
-
+  }
 }
-@media (max-width:794px)
-{
-  .projectCard{
-       flex-direction: column;      
+@media (max-width: 794px) {
+  .projectCard {
+    flex-direction: column;
+  }
+}
+@media (max-width: 617px) {
+  .serviceSection {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
+  .row {
+    height: 5px;
+    width: 80%;
+  }
+  .rightSection {
+    width: auto;
+    margin: 0;
+  }
 
-     }
+  .leftSection {
+    width: auto;
+    margin: 0;
+  }
+  .leftSection span {
+    font-size: 60px;
+  }
+  .horizontal {
+    width: 80%;
+    background-color: white;
+    height: 2px;
+  }
+}
 
+@media (max-width:653px){
+  .leftSection{
+    padding: 1rem;
+  }
+}
+@media (max-width:625px){
+  .headingSection{
+    flex-direction: column;
+  }
+  .headingSection span{
+    width: 100%;
+  }
 }
