@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+.outerContainer {
+  display: flex;
+  justify-content: center;
+}
+.contentContainer {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.textContainer h1 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 3rem;
+
+  color: #364f6b;
+}
+.textContainer p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+
+  color: #333333;
+}
+.textContainer .btn,.workContainer .btn {
+  padding: 0.3rem 1rem;
+  background: #43dde6;
+  border-radius: 100px;
+  color: black !important;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #000000;
+  width: fit-content;
+}
+
+.imageContainer {
+  width: 50%;
+  height:60vh;
+  background-image: url(../../../public/assets/internship.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.workContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.workContainer h1{
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 86px;
+    
+    color: #364F6B;
+}
+
+.projectCard{
+  display: flex;
+}
+
+@media (max-width:837px)
+{
+    
+    .contentContainer{
+        flex-direction: column;
+    }
+    .textContainer{
+        gap:1rem;
+        align-items: center;
+    }
+    .imageContainer{
+        width: auto;
+    }
+   
+}
+
+@media (max-width:902px)
+{
+  .projectCard{
+    align-items: center;
+    flex-wrap: wrap;
+     }
+
+}
+@media (max-width:794px)
+{
+  .projectCard{
+       flex-direction: column;      
+
+     }
+
+}

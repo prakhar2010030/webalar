@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Navbar.scss";
+import "./Navbar.css";
 import NightlightIcon from "@mui/icons-material/Nightlight";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
@@ -20,7 +20,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="menuContainer">
-        <MenuIcon className="menuIcon" />
+        <MenuIcon sx={{"display":"none"}} className="menuIcon" />
         <ol>
           <li>Home</li>
           <li>About</li>

@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import React from "react";
-import "./footer.scss";
+import "./Footer.css";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -10,37 +10,37 @@ const Footer = () => {
       <div className="footer">
         <div className="upperfooter">
           <div className="left">
-            <span>Let's work</span>
-            <span>together</span>
+            <h1>Let's work</h1>
+            <h1>together</h1>
           </div>
           <div className="right">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
               quisquam fuga officiis consequuntur cumque ea nihil deleniti
               obcaecati sunt porro autem incidunt laboriosam rem, quasi quod
-              provident! Quam, consequuntur perferendis.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, fugit!
+              provident! Quam, consequuntur perferendis. Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Sunt, fugit!
             </p>
-            <Button className="btn">Let's talk</Button>
+            <Button className="footerbtn">Let's talk</Button>
           </div>
         </div>
         <div className="lowerFooter">
           <div className="handle">
             <div className="logo">
-              <div className="shapeContainer">
+              <div className="FootershapeContainer">
                 <span className="square"></span>
                 <span className="circle"></span>
                 <span className="circle"></span>
               </div>
-              <div className="textContainer">
+              <div className="FootertextContainer">
                 <span>logoipsum</span>
-                <span></span>
+                <span className="dot"></span>
               </div>
             </div>
-            <div className="socialHandle">
+            <div className="footersocialHandle">
               <InstagramIcon className="Icon" />
               <TwitterIcon className="Icon" />
-              <FacebookIcon className="Icon"/>
+              <FacebookIcon className="Icon" />
             </div>
           </div>
           <div className="addressSection">
