@@ -11,8 +11,8 @@ import image1 from "../../../src/assets/Group\ 72.png"
 import image2 from "../../../src/assets/Group\ 73.png"
 // eslint-disable-next-line
 import image3 from "../../../src/assets/Group\ 75.png"
-
 const HomePage = () => {
+
   return (
     <div className="Homepage">
       <Navbar />

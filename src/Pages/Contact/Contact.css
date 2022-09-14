@@ -80,6 +80,8 @@
   font-size: large
 }
 .inputContainer textarea {
+  padding: 1rem;
+  color: white;
   width: auto;
   background: #394149;
   border-radius: 8px;
