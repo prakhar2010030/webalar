@@ -9,7 +9,65 @@
   justify-content: space-between;
   gap: 1rem;
 }
+.mySwiper{
+/* text-align: center; */
+display: flex !important; 
+padding: 1rem !important;
+/* height: fit-content; */
+  justify-content: space-between !important;
+  width:600px !important;
+}
+.slide{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-around;
+}
 
+.Carousellogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.CarouselshapeContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+ .Carouselsquare {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #ffffff;
+}
+ .Carouselcircle {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: #ffffff;
+}
+.CarouseltextContainer {
+  position: relative;
+}
+
+.CarouseltextContainer span:nth-child(1) {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+ .Carouseldot::after {
+  content: "";
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+ background-color: #ffffff;
+}
+
+.company{
+  display: none;
+}
 .textContainer {
   flex: 1;
   display: flex;
@@ -72,6 +130,7 @@
   display: flex;
   align-items: center;
   gap:1rem;
+  width: auto;
 }
 .headingSection h1 {
   font-family: "Poppins";
@@ -238,7 +297,18 @@
   .headingSection{
     flex-direction: column;
   }
-  .headingSection span{
-    width: 100%;
+  
+}
+@media (max-width:662px){
+  .mySwiper{
+display:none !important;
+  }
+  .company{
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    flex-wrap: wrap;
   }
 }

@@ -6,13 +6,17 @@ import "./Homepage.css";
 import CardProject from "../../components/Cards/Card";
 import ServiceCard from "../../components/Cards/ServiceCard";
 // eslint-disable-next-line
-import image1 from "../../../src/assets/Group\ 72.png"
+import image1 from "../../../src/assets/Group 72.png";
 // eslint-disable-next-line
-import image2 from "../../../src/assets/Group\ 73.png"
+import image2 from "../../../src/assets/Group 73.png";
 // eslint-disable-next-line
-import image3 from "../../../src/assets/Group\ 75.png"
+import image3 from "../../../src/assets/Group 75.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper";
+import Carousel from "../../components/Carousel/Carousel";
 const HomePage = () => {
-
   return (
     <div className="Homepage">
       <Navbar />
@@ -39,8 +43,29 @@ const HomePage = () => {
             <h1>Trusted Companies</h1>
             <span></span>
           </div>
-          <div className="carousel">
-
+        </div>
+        <div className="carousel">
+          <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+            <SwiperSlide className="slide">
+              <Carousel font="Lato" />
+              <Carousel font="Maglony" />
+              <Carousel font="poppins" />
+            </SwiperSlide>
+            <SwiperSlide className="slide">
+              <Carousel font="Lato" />
+              <Carousel font="Maglony" />
+              <Carousel font="poppins" />
+            </SwiperSlide>
+            <SwiperSlide className="slide">
+              <Carousel font="Lato" />
+              <Carousel font="Maglony" />
+              <Carousel font="poppins" />
+            </SwiperSlide>
+          </Swiper>
+          <div className="company">
+          <Carousel font="poppins" />
+          <Carousel font="Maglony" />
+          <Carousel font="Lato" />
           </div>
         </div>
         <span className="horizontal"></span>
@@ -60,11 +85,11 @@ const HomePage = () => {
             </div>
           </div>
           <div className="services">
-            <ServiceCard Title="Design" image={image1}/>
+            <ServiceCard Title="Design" image={image1} />
             <span className="row"></span>
-            <ServiceCard Title="Development" image={image2}/>
-            <span className="row" ></span>
-            <ServiceCard Title="Marketing" image={image3}/>
+            <ServiceCard Title="Development" image={image2} />
+            <span className="row"></span>
+            <ServiceCard Title="Marketing" image={image3} />
           </div>
         </div>
       </div>
