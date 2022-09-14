@@ -165,4 +165,8 @@
   .emailContainer{
     width: 100%;
   }
+  .AddressContainer {
+    
+    align-items: center;
+  }
 }
